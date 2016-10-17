@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bare - Start Bootstrap Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="app.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="service/service.js"></script>
+  <script src="controllers/controllers.js"></script>
+    <script src="controllers/mainCtrl.js"></script>
+	<!-- Custom CSS -->
+	<style>
+
+    body {
+        padding-top: 70px;
+		background: url(http://nebula.wsimg.com/92963f67dd226b315d1a312d117a9a51?AccessKeyId=531592D248B589D87A56&disposition=0&alloworigin=1) 96% / 15% no-repeat #eee;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+
+	.rTable { display: table;width: 80%; align-items: center; justify-content: center }
+	.rTableRow {display: table-row; }
+	.rTableHeading {display: table-header-group; background-color: #ddd; }
+	.rTableCell, .rTableHead { display: table-cell; padding: 3px 10px; border: 1px solid #999999; }
+	.rTableHeading {display: table-header-group;background-color: #ddd;	font-weight: bold; }
+	.rTableFoot {display: table-footer-group; font-weight: bold; background-color: #ddd; }
+	.rTableBody {display: table-row-group; }
+
+	label {
+	  margin: 10px;
+	  background: transparent;
+	  padding: 5px 5px 5px 5px;
+	  font-size: 12px;
+	  height: 0px;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  appearance: none;
+	}
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="myApp" ng-controller="mainCtrl">
+<h1>Foo Details</h1>
+<label>ID</label><span>{{foo.id}}</span>
+<label>Name</label><span>{{foo.name}}</span>
+<a href="#" ng-click="getFoo()">New Foo</a>
+</body>
+
+</html>
